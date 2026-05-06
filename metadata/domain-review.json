@@ -1,0 +1,73 @@
+{
+  "repo": "anchor-algo-geometry-stack",
+  "language": "OCaml",
+  "category": "Algorithms",
+  "goal": "Package an OCaml local lab for geometry analysis with transition tables, invalid-transition tests, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 44,
+      "slack": 23,
+      "drag": 29,
+      "confidence": 67,
+      "score": 91,
+      "lane": "hold"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 48,
+      "slack": 46,
+      "drag": 28,
+      "confidence": 50,
+      "score": 108,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 56,
+      "slack": 54,
+      "drag": 21,
+      "confidence": 83,
+      "score": 186,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 55,
+      "slack": 26,
+      "drag": 29,
+      "confidence": 67,
+      "score": 116,
+      "lane": "watch"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 57,
+      "slack": 33,
+      "drag": 17,
+      "confidence": 88,
+      "score": 184,
+      "lane": "ship"
+    }
+  ]
+}

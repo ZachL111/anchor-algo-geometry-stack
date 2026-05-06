@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,input width,44,23,29,67,91,hold
+stress,search depth,48,46,28,50,108,watch
+edge,boundary pressure,56,54,21,83,186,ship
+recovery,complexity,55,26,29,67,116,watch
+stale,input width,57,33,17,88,184,ship
